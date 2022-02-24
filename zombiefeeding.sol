@@ -32,12 +32,9 @@ contract ZombieFeeding is ZombieFactory {
 
 // Now `kittyContract` is pointing to the other contract
 // Now we can call `getKitty` from that contract:
-//Let's make it so zombies made from kitties have some unique feature that shows they're cat-zombies.
-//To do this, we can add some special kitty code in the zombie's DNA.
-//use the last 2 unused digits(in 16 digits) to handle "special" characteristics
-//We'll say that cat-zombies have 99 as their last two digits of DNA (since cats have 9 lives). 
-//So in our code, we'll say if a zombie comes from a cat, then set the last two digits of DNA to 99.
-// Modify function definition here:
+//Let's make it so zombies made from kitties have some unique feature that shows they're cat-zombies.To do this, we can add some special kitty code in the zombie's DNA.
+//use the last 2 unused digits(in 16 digits) to handle "special" characteristics. We'll say that cat-zombies have 99 as their last two digits of DNA (since cats have 9 lives). 
+//So in our code, we'll say if a zombie comes from a cat, then set the last two digits of DNA to 99. Modify function definition here (add the 3rd argument):
   
   function feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species) public {
 
